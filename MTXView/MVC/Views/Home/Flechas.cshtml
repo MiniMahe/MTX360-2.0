@@ -1,0 +1,29 @@
+﻿@model MVC.Models.Arrows
+
+@{
+    Layout = "_Flechas";
+}
+<div class="container">
+       
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+            <th scope="col">Id imagen</th>
+            <th scope="col">Nodo</th>
+            <th scope="col">Posición</th>
+                <th scope="col" colspan="2"> @Html.ActionLink("Crear","CFlecha",new{},new{@class="btn btn btn-success"})</th>
+
+			</tr>
+		</thead>
+            @foreach(var item in Model.list){
+            <tr >
+                <td>@item.id_image</td>
+                <td >@item.nodeid</td>
+                <td >@item.posicion</td>
+                <td >@Html.ActionLink("Editar","EdFlecha",new{id=item.id,idimg=item.id_image,nodo=item.nodeid,pos=item.posicion},new{@class="btn btn-primary"})</td>
+                <td >@Html.ActionLink("Eliminar","ElFlecha",new{id=item.id},new{@class="btn btn-danger"})</td>
+            </tr>
+            }
+        </table>
+
+</div>
