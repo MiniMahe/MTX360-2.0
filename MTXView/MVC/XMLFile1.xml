@@ -8,8 +8,9 @@
 	</startup>
 	<connectionStrings>
 
-		<add name="cnnString">Server="localhost";DataBase="mtxview";User Id="root";Password=""</add>
+		<add name="cnnString">Server=MAHE\SQLEXPRESS;Database=MTX360;Integrated Security=True;</add>
 		<!--<add name="cnnString">Server="mlmvc.com.mialias.net";DataBase="mtxview";User Id="lmmvc";Password="testmvc1"</add>-->
-		<odd name="cnnString"> Server="A611\SQLEXPRESS";DataBase="Usuario";User Id="sa";Password="1cfgs" </odd>
+		<!--<add name="cnnString">Server=tcp:mtx360.database.windows.net,1433;DataBase=MTX360;Persist Security Info=False;User id=mtx360;Password=Finalproject1!</add>-->
+		<!--<odd name="cnnString"> Server="A611\SQLEXPRESS";DataBase="Usuario";User Id="sa";Password="1cfgs"</odd>-->
 	</connectionStrings>
 </configuration>

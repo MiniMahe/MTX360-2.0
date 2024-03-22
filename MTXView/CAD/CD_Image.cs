@@ -1,5 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace CAD
 {
@@ -8,12 +9,12 @@ namespace CAD
         MySqlDataReader leer;
         public DataTable LoadImage()
         {
-            using (MySqlConnection conexionsql = new(CD_Conexion.ConexionStr()))
+            using (SqlConnection conexionsql = new(CD_Conexion.ConexionStr()))
             {
-                string query1 = "SELECT * FROM `imagen`";
+                string query1 = "SELECT * FROM imagen";
 
-                MySqlCommand comando = new MySqlCommand(query1, conexionsql);
-                MySqlDataAdapter adapter1 = new MySqlDataAdapter(comando);
+                SqlCommand comando = new SqlCommand(query1, conexionsql);
+                SqlDataAdapter adapter1 = new SqlDataAdapter(comando);
                 DataTable dataTable = new DataTable();
                 adapter1.Fill(dataTable);
                 return dataTable;
