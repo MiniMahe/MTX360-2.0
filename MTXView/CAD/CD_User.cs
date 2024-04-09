@@ -1,23 +1,23 @@
-﻿using MySql.Data.MySqlClient;
-using System.Data;
+﻿using System.Data;
+using System.Data.SqlClient;
 
 namespace CAD
 {
     public class CD_User
     {
-        MySqlDataReader leer;
+        SqlDataReader leer;
 
         public string Verify(string nombre, string password)
         {
             try
             {
-                using (MySqlConnection conexionsql = new(CD_Conexion.ConexionStr()))
+                using (SqlConnection conexionsql = new(CD_Conexion.ConexionStr()))
                 {
-                    using (MySqlCommand comando = new MySqlCommand("Verificar", conexionsql))
+                    using (SqlCommand comando = new SqlCommand("Verificar", conexionsql))
                     {
                         comando.CommandType = CommandType.StoredProcedure;
-                        comando.Parameters.Add("name", MySqlDbType.VarChar).Value = nombre;
-                        comando.Parameters.Add("pass", MySqlDbType.VarChar).Value = password;
+                        comando.Parameters.Add("name", SqlDbType.VarChar).Value = nombre;
+                        comando.Parameters.Add("pass", SqlDbType.VarChar).Value = password;
                         conexionsql.Open();
 
                         leer = comando.ExecuteReader();
@@ -30,17 +30,13 @@ namespace CAD
                         else
                         {
                             conexionsql.Close();
-
                             return null;
                         }
-
-
                     }
                 }
             }
             catch (Exception)
             {
-
                 return null;
             }
         }

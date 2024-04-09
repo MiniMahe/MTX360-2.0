@@ -36,9 +36,7 @@ namespace MVC.Controllers
                 {
                     List<Claim> claims = new List<Claim>() {
                     new Claim(ClaimTypes.NameIdentifier, login),
-                    new Claim("OtherProperties","Example Role")
-
-                };
+                    new Claim("OtherProperties","Example Role")};
 
                     ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims,
                         CookieAuthenticationDefaults.AuthenticationScheme);
@@ -61,7 +59,7 @@ namespace MVC.Controllers
 
             }
 
-            ViewData["ValidateMessage"] = "No válido";
+            //ViewData["ValidateMessage"] = "No válido";
             return View();
         }
         public List<Imagen> Allimages()
