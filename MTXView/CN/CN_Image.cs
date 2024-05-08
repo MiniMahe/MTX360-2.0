@@ -8,8 +8,8 @@ namespace CN
         public int id { get; set; }
         public string Name { get; set; }
         public string ruta { get; set; }
-        public int? x { get; set; }
-        public int? y { get; set; }
+        public int x { get; set; }
+        public int y { get; set; }
         public int piso { get; set; }
         public List<CN_Image> Getimage()
         {
@@ -30,6 +30,20 @@ namespace CN
             imagenes = query.ToList();
             return imagenes;
         }
-
+        //public void Crear(int idimg, int node, string pos)
+        //{
+        //    CD_Image imagen = new CD_Image();
+        //    //imagen.Crear(idimg, node, pos);
+        //}
+        public void Editar(int id, string nombre, string ruta, int x, int y, int piso)
+        {
+            CD_Image imagen = new CD_Image();
+            imagen.Editar(id, nombre, ruta, x, y, piso);
+        }
+        public void Eliminar(int id)
+        {
+            CD_Image imagen = new CD_Image();
+            imagen.Eliminar(id);
+        }
     }
 }

@@ -10,7 +10,7 @@ function promesa() {
 
             listaImagenes.forEach(function (imagen) {
                 let nombreId = imagen.id;
-                let nombreImagen = imagen.Name;
+                let nombreImagen = imagen.nombre;
                 let colors = '#FF99F6';
                 let urlImagen = imagen.ruta;
                 let cordenadax = imagen.x;

@@ -18,8 +18,6 @@ namespace MVC.Controllers
             if (claimUser.Identity.IsAuthenticated)
                 return RedirectToAction("Index", "Home");
 
-
-
             return View("Login");
         }
 
@@ -59,12 +57,11 @@ namespace MVC.Controllers
 
             }
 
-            //ViewData["ValidateMessage"] = "No válido";
+            ViewData["ValidateMessage"] = "No válido";
             return View();
         }
         public List<Imagen> Allimages()
         {
-
             CN_Image clase = new CN_Image();
             CN_Arrow claseflecha = new CN_Arrow();
             List<CN_Image> todaslasimagenes = new List<CN_Image>();
@@ -76,7 +73,7 @@ namespace MVC.Controllers
             {
                 Imagen imagen = new Imagen();
                 imagen.id = Negocio.id;
-                imagen.Name = Negocio.Name;
+                imagen.nombre = Negocio.Name;
                 imagen.ruta = Negocio.ruta;
                 imagen.x = Negocio.x;
                 imagen.y = Negocio.y;
@@ -99,9 +96,7 @@ namespace MVC.Controllers
         }
         public JsonResult ObtenerListaImagenes()
         {
-
             List<Imagen> listaImagenes = Allimages();
-
 
             return Json(JsonSerializer.Serialize(listaImagenes));
         }

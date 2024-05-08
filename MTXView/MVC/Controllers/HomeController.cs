@@ -12,16 +12,28 @@ namespace MVC.Controllers
     {
         public IActionResult Index()
         {
-            return Planta1();
+            return View("Index");
         }
-        public IActionResult Planta1()
+        public IActionResult Imagenes()
         {
+            CN_Image clase = new CN_Image();
+            List<CN_Image> todaslasimagenes = new List<CN_Image>();
+            Imagen lista = new Imagen();
+            todaslasimagenes = clase.Getimage();
+            foreach (CN_Image Negocio in todaslasimagenes)
+            {
+                Imagen imagen = new Imagen();
+                imagen.id = Negocio.id;
+                imagen.nombre = Negocio.Name;
+                imagen.ruta = Negocio.ruta;
+                imagen.x = Negocio.x;
+                imagen.y = Negocio.y;
+                imagen.piso = Negocio.piso;
 
-            ListaClases listaClases = new ListaClases();
-            listaClases.RellenarLista();
-            ViewData["piso"] = "1";
+                lista.list.Add(imagen);
+            }
 
-            return View("Index", listaClases);
+            return View("Imagenes", lista);
         }
         public IActionResult Planta2()
         {
@@ -40,30 +52,29 @@ namespace MVC.Controllers
 
             return View("Index", listaClases);
         }
-        public IActionResult Edit(int id, int piso, string name)
-        {
-            ListaClases clases = new ListaClases();
-            clases.RellenarLista(piso - 1);
-            ViewData["piso"] = piso;
-            clases.id = id;
-            clases.name = name;
+        //public IActionResult Edit(int id, int piso, string name)
+        //{
+        //    ListaClases clases = new ListaClases();
+        //    clases.RellenarLista(piso - 1);
+        //    ViewData["piso"] = piso;
+        //    clases.id = id;
+        //    clases.name = name;
 
-            return View("Index", clases);
-        }
-        [HttpPost]
-        public IActionResult Edit(ListaClases listaClases)
-        {
-            ListaClases clases = new ListaClases();
-            clases.RellenarLista();
-            ViewData["piso"] = 1;
-            CN_editar cN_Editar = new CN_editar();
-            cN_Editar.Editar(listaClases.id + 1, listaClases.name, listaClases.url);
+        //    return View("Index", clases);
+        //}
+        //[HttpPost]
+        //public IActionResult Edit(ListaClases listaClases)
+        //{
+        //    ListaClases clases = new ListaClases();
+        //    clases.RellenarLista();
+        //    ViewData["piso"] = 1;
+        //    CN_editar cN_Editar = new CN_editar();
+        //    cN_Editar.Editar(listaClases.id + 1, listaClases.name, listaClases.url);
 
-            return View("Index", clases);
-        }
+        //    return View("Index", clases);
+        //}
         public async Task<IActionResult> LogOut()
         {
-
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             return RedirectToAction("Login", "Access");
         }
@@ -86,7 +97,6 @@ namespace MVC.Controllers
         }
         public IActionResult CFlecha()
         {
-
             return View();
         }
         [HttpPost]
@@ -118,6 +128,30 @@ namespace MVC.Controllers
             CN_Arrow negocio = new CN_Arrow();
             negocio.Eliminar(id);
             return RedirectToAction("Flechas");
+        }
+        public IActionResult EdImagen(int id,string nombre, string ruta, int x, int y, int piso)
+        {
+            Imagen imagenes = new Imagen();
+            imagenes.id = id;
+            imagenes.nombre = nombre;
+            imagenes.ruta = ruta;
+            imagenes.x = x;
+            imagenes.y = y;
+            imagenes.piso = piso;
+            return View(imagenes);
+        }
+        [HttpPost]
+        public IActionResult EdImagen(Imagen img)
+        {
+            CN_Image negocio = new CN_Image();
+            negocio.Editar(img.id, img.nombre, img.ruta, img.x, img.y, img.piso);
+            return RedirectToAction("Imagenes");
+        }
+        public IActionResult ElImagen(int id)
+        {
+            CN_Image negocio = new CN_Image();
+            negocio.Eliminar(id);
+            return RedirectToAction("Imagenes");
         }
     }
 }

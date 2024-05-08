@@ -1,0 +1,368 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC82CBA-8116-468D-A398-6361D3C42DBE}|CAD\\CAD.csproj|c:\\users\\maelm\\documents\\clase\\mtx\\mtx360-2.0\\mtxview\\cad\\cd_image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC82CBA-8116-468D-A398-6361D3C42DBE}|CAD\\CAD.csproj|solutionrelative:cad\\cd_image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9C32C1D-5C2F-4E5F-B44F-A9D57D7F5E5C}|CN\\CN.csproj|c:\\users\\maelm\\documents\\clase\\mtx\\mtx360-2.0\\mtxview\\cn\\cn_image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9C32C1D-5C2F-4E5F-B44F-A9D57D7F5E5C}|CN\\CN.csproj|solutionrelative:cn\\cn_image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40F4E8D-0C68-40D2-8AA5-58AD4984568D}|MVC\\MVC.csproj|c:\\users\\maelm\\documents\\clase\\mtx\\mtx360-2.0\\mtxview\\mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A40F4E8D-0C68-40D2-8AA5-58AD4984568D}|MVC\\MVC.csproj|solutionrelative:mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40F4E8D-0C68-40D2-8AA5-58AD4984568D}|MVC\\MVC.csproj|c:\\users\\maelm\\documents\\clase\\mtx\\mtx360-2.0\\mtxview\\mvc\\views\\home\\edimagen.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A40F4E8D-0C68-40D2-8AA5-58AD4984568D}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\home\\edimagen.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40F4E8D-0C68-40D2-8AA5-58AD4984568D}|MVC\\MVC.csproj|c:\\users\\maelm\\documents\\clase\\mtx\\mtx360-2.0\\mtxview\\mvc\\views\\home\\imagenes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A40F4E8D-0C68-40D2-8AA5-58AD4984568D}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\home\\imagenes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40F4E8D-0C68-40D2-8AA5-58AD4984568D}|MVC\\MVC.csproj|c:\\users\\maelm\\documents\\clase\\mtx\\mtx360-2.0\\mtxview\\mvc\\views\\home\\flechas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A40F4E8D-0C68-40D2-8AA5-58AD4984568D}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\home\\flechas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40F4E8D-0C68-40D2-8AA5-58AD4984568D}|MVC\\MVC.csproj|c:\\users\\maelm\\documents\\clase\\mtx\\mtx360-2.0\\mtxview\\mvc\\views\\home\\edflecha.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A40F4E8D-0C68-40D2-8AA5-58AD4984568D}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\home\\edflecha.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40F4E8D-0C68-40D2-8AA5-58AD4984568D}|MVC\\MVC.csproj|c:\\users\\maelm\\documents\\clase\\mtx\\mtx360-2.0\\mtxview\\mvc\\controllers\\accesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A40F4E8D-0C68-40D2-8AA5-58AD4984568D}|MVC\\MVC.csproj|solutionrelative:mvc\\controllers\\accesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40F4E8D-0C68-40D2-8AA5-58AD4984568D}|MVC\\MVC.csproj|c:\\users\\maelm\\documents\\clase\\mtx\\mtx360-2.0\\mtxview\\mvc\\models\\imagen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A40F4E8D-0C68-40D2-8AA5-58AD4984568D}|MVC\\MVC.csproj|solutionrelative:mvc\\models\\imagen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40F4E8D-0C68-40D2-8AA5-58AD4984568D}|MVC\\MVC.csproj|c:\\users\\maelm\\documents\\clase\\mtx\\mtx360-2.0\\mtxview\\mvc\\views\\home\\cflecha.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A40F4E8D-0C68-40D2-8AA5-58AD4984568D}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\home\\cflecha.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40F4E8D-0C68-40D2-8AA5-58AD4984568D}|MVC\\MVC.csproj|c:\\users\\maelm\\documents\\clase\\mtx\\mtx360-2.0\\mtxview\\mvc\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A40F4E8D-0C68-40D2-8AA5-58AD4984568D}|MVC\\MVC.csproj|solutionrelative:mvc\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC82CBA-8116-468D-A398-6361D3C42DBE}|CAD\\CAD.csproj|c:\\users\\maelm\\documents\\clase\\mtx\\mtx360-2.0\\mtxview\\cad\\cd_arrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC82CBA-8116-468D-A398-6361D3C42DBE}|CAD\\CAD.csproj|solutionrelative:cad\\cd_arrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC82CBA-8116-468D-A398-6361D3C42DBE}|CAD\\CAD.csproj|c:\\users\\maelm\\documents\\clase\\mtx\\mtx360-2.0\\mtxview\\cad\\cd_2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC82CBA-8116-468D-A398-6361D3C42DBE}|CAD\\CAD.csproj|solutionrelative:cad\\cd_2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC82CBA-8116-468D-A398-6361D3C42DBE}|CAD\\CAD.csproj|c:\\users\\maelm\\documents\\clase\\mtx\\mtx360-2.0\\mtxview\\cad\\cd_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC82CBA-8116-468D-A398-6361D3C42DBE}|CAD\\CAD.csproj|solutionrelative:cad\\cd_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40F4E8D-0C68-40D2-8AA5-58AD4984568D}|MVC\\MVC.csproj|c:\\users\\maelm\\documents\\clase\\mtx\\mtx360-2.0\\mtxview\\mvc\\models\\arrows.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A40F4E8D-0C68-40D2-8AA5-58AD4984568D}|MVC\\MVC.csproj|solutionrelative:mvc\\models\\arrows.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40F4E8D-0C68-40D2-8AA5-58AD4984568D}|MVC\\MVC.csproj|c:\\users\\maelm\\documents\\clase\\mtx\\mtx360-2.0\\mtxview\\mvc\\models\\listaclases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A40F4E8D-0C68-40D2-8AA5-58AD4984568D}|MVC\\MVC.csproj|solutionrelative:mvc\\models\\listaclases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40F4E8D-0C68-40D2-8AA5-58AD4984568D}|MVC\\MVC.csproj|c:\\users\\maelm\\documents\\clase\\mtx\\mtx360-2.0\\mtxview\\mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A40F4E8D-0C68-40D2-8AA5-58AD4984568D}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9C32C1D-5C2F-4E5F-B44F-A9D57D7F5E5C}|CN\\CN.csproj|c:\\users\\maelm\\documents\\clase\\mtx\\mtx360-2.0\\mtxview\\cn\\cn_2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9C32C1D-5C2F-4E5F-B44F-A9D57D7F5E5C}|CN\\CN.csproj|solutionrelative:cn\\cn_2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9C32C1D-5C2F-4E5F-B44F-A9D57D7F5E5C}|CN\\CN.csproj|c:\\users\\maelm\\documents\\clase\\mtx\\mtx360-2.0\\mtxview\\cn\\cn_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9C32C1D-5C2F-4E5F-B44F-A9D57D7F5E5C}|CN\\CN.csproj|solutionrelative:cn\\cn_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40F4E8D-0C68-40D2-8AA5-58AD4984568D}|MVC\\MVC.csproj|c:\\users\\maelm\\documents\\clase\\mtx\\mtx360-2.0\\mtxview\\mvc\\xmlfile1.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A40F4E8D-0C68-40D2-8AA5-58AD4984568D}|MVC\\MVC.csproj|solutionrelative:mvc\\xmlfile1.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EdImagen.cshtml",
+              "DocumentMoniker": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\MVC\\Views\\Home\\EdImagen.cshtml",
+              "RelativeDocumentMoniker": "MVC\\Views\\Home\\EdImagen.cshtml",
+              "ToolTip": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\MVC\\Views\\Home\\EdImagen.cshtml",
+              "RelativeToolTip": "MVC\\Views\\Home\\EdImagen.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-23T08:19:48.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AccessController.cs",
+              "DocumentMoniker": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\MVC\\Controllers\\AccessController.cs",
+              "RelativeDocumentMoniker": "MVC\\Controllers\\AccessController.cs",
+              "ToolTip": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\MVC\\Controllers\\AccessController.cs",
+              "RelativeToolTip": "MVC\\Controllers\\AccessController.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAtwE0AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T15:45:56.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Flechas.cshtml",
+              "DocumentMoniker": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\MVC\\Views\\Home\\Flechas.cshtml",
+              "RelativeDocumentMoniker": "MVC\\Views\\Home\\Flechas.cshtml",
+              "ToolTip": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\MVC\\Views\\Home\\Flechas.cshtml",
+              "RelativeToolTip": "MVC\\Views\\Home\\Flechas.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T12:58:46.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CN_Image.cs",
+              "DocumentMoniker": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\CN\\CN_Image.cs",
+              "RelativeDocumentMoniker": "CN\\CN_Image.cs",
+              "ToolTip": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\CN\\CN_Image.cs",
+              "RelativeToolTip": "CN\\CN_Image.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAtwCgAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T16:20:20.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Imagen.cs",
+              "DocumentMoniker": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\MVC\\Models\\Imagen.cs",
+              "RelativeDocumentMoniker": "MVC\\Models\\Imagen.cs",
+              "ToolTip": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\MVC\\Models\\Imagen.cs",
+              "RelativeToolTip": "MVC\\Models\\Imagen.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T13:10:01.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ListaClases.cs",
+              "DocumentMoniker": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\MVC\\Models\\ListaClases.cs",
+              "RelativeDocumentMoniker": "MVC\\Models\\ListaClases.cs",
+              "ToolTip": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\MVC\\Models\\ListaClases.cs",
+              "RelativeToolTip": "MVC\\Models\\ListaClases.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T12:06:20.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Arrows.cs",
+              "DocumentMoniker": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\MVC\\Models\\Arrows.cs",
+              "RelativeDocumentMoniker": "MVC\\Models\\Arrows.cs",
+              "ToolTip": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\MVC\\Models\\Arrows.cs",
+              "RelativeToolTip": "MVC\\Models\\Arrows.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T13:09:41.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CD_Image.cs",
+              "DocumentMoniker": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\CAD\\CD_Image.cs",
+              "RelativeDocumentMoniker": "CAD\\CD_Image.cs",
+              "ToolTip": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\CAD\\CD_Image.cs",
+              "RelativeToolTip": "CAD\\CD_Image.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAtwCwAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T16:20:20.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CD_2D.cs",
+              "DocumentMoniker": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\CAD\\CD_2D.cs",
+              "RelativeDocumentMoniker": "CAD\\CD_2D.cs",
+              "ToolTip": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\CAD\\CD_2D.cs",
+              "RelativeToolTip": "CAD\\CD_2D.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T16:23:03.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Imagenes.cshtml",
+              "DocumentMoniker": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\MVC\\Views\\Home\\Imagenes.cshtml",
+              "RelativeDocumentMoniker": "MVC\\Views\\Home\\Imagenes.cshtml",
+              "ToolTip": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\MVC\\Views\\Home\\Imagenes.cshtml",
+              "RelativeToolTip": "MVC\\Views\\Home\\Imagenes.cshtml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAEUAAAB2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-23T09:01:44.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\MVC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "MVC\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\MVC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "MVC\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAHoAAAAAAAAAAIAwwJIAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T10:35:16.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EdFlecha.cshtml",
+              "DocumentMoniker": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\MVC\\Views\\Home\\EdFlecha.cshtml",
+              "RelativeDocumentMoniker": "MVC\\Views\\Home\\EdFlecha.cshtml",
+              "ToolTip": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\MVC\\Views\\Home\\EdFlecha.cshtml",
+              "RelativeToolTip": "MVC\\Views\\Home\\EdFlecha.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-08T12:30:20.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\MVC\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVC\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\MVC\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "MVC\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-09T16:21:00.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CN_2D.cs",
+              "DocumentMoniker": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\CN\\CN_2D.cs",
+              "RelativeDocumentMoniker": "CN\\CN_2D.cs",
+              "ToolTip": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\CN\\CN_2D.cs",
+              "RelativeToolTip": "CN\\CN_2D.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T10:21:38.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CFlecha.cshtml",
+              "DocumentMoniker": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\MVC\\Views\\Home\\CFlecha.cshtml",
+              "RelativeDocumentMoniker": "MVC\\Views\\Home\\CFlecha.cshtml",
+              "ToolTip": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\MVC\\Views\\Home\\CFlecha.cshtml",
+              "RelativeToolTip": "MVC\\Views\\Home\\CFlecha.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-23T08:33:14.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\MVC\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "MVC\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\MVC\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "MVC\\wwwroot\\js\\site.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-08T12:21:59.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CD_Arrow.cs",
+              "DocumentMoniker": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\CAD\\CD_Arrow.cs",
+              "RelativeDocumentMoniker": "CAD\\CD_Arrow.cs",
+              "ToolTip": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\CAD\\CD_Arrow.cs",
+              "RelativeToolTip": "CAD\\CD_Arrow.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowDQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T16:20:20.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CD_User.cs",
+              "DocumentMoniker": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\CAD\\CD_User.cs",
+              "RelativeDocumentMoniker": "CAD\\CD_User.cs",
+              "ToolTip": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\CAD\\CD_User.cs",
+              "RelativeToolTip": "CAD\\CD_User.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwAoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T15:53:44.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CN_User.cs",
+              "DocumentMoniker": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\CN\\CN_User.cs",
+              "RelativeDocumentMoniker": "CN\\CN_User.cs",
+              "ToolTip": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\CN\\CN_User.cs",
+              "RelativeToolTip": "CN\\CN_User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T15:53:55.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "XMLFile1.xml",
+              "DocumentMoniker": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\MVC\\XMLFile1.xml",
+              "RelativeDocumentMoniker": "MVC\\XMLFile1.xml",
+              "ToolTip": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\MVC\\XMLFile1.xml",
+              "RelativeToolTip": "MVC\\XMLFile1.xml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-03-13T16:20:20.742Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

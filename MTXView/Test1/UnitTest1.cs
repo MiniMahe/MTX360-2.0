@@ -9,7 +9,7 @@ namespace Test1
 	public class UnitTest1
 	{
 		[TestMethod]
-		public void DaFlechasView()
+        public void DaFlechasView()
 		{
 			var controller = new HomeController();
 			var result = controller.Flechas();
@@ -40,7 +40,7 @@ namespace Test1
         {
             var controller = new HomeController();
 
-            var result = controller.Planta1() as ViewResult;
+            var result = controller.Planta2() as ViewResult;
             var model = result.Model as ListaClases;
 
             Assert.IsNotNull(model);

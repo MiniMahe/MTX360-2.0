@@ -7,14 +7,11 @@ namespace CAD
 {
     public class CD_Arrow
     {
-        MySqlDataReader leer;
         public DataTable LoadArrow()
         {
             using (SqlConnection conexionsql = new(CD_Conexion.ConexionStr()))
             {
-                string query1 = "SELECT * FROM flecha";
-
-                SqlCommand comando = new SqlCommand(query1, conexionsql);
+                SqlCommand comando = new SqlCommand("SacarFlecha", conexionsql);
                 SqlDataAdapter adapter1 = new SqlDataAdapter(comando);
                 DataTable dataTable = new DataTable();
                 adapter1.Fill(dataTable);
@@ -23,49 +20,50 @@ namespace CAD
         }
         public void Crear(int idim, int nodo, string pos)
         {
-            using (MySqlConnection conexionsql = new(CD_Conexion.ConexionStr()))
+            using (SqlConnection conexionsql = new(CD_Conexion.ConexionStr()))
             {
-                using (MySqlCommand command = new MySqlCommand("CrearFlecha", conexionsql))
-                {
-                    command.CommandType = CommandType.StoredProcedure;
-                    command.Parameters.AddWithValue("@idimg", idim).Direction = ParameterDirection.InputOutput;
-                    command.Parameters.AddWithValue("@node", nodo).Direction = ParameterDirection.InputOutput;
-                    command.Parameters.AddWithValue("@posicion", pos).Direction = ParameterDirection.InputOutput;
+                SqlCommand command = new SqlCommand("CrearFlecha", conexionsql);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@idimg", idim);
+                command.Parameters.AddWithValue("@node", nodo);
+                command.Parameters.AddWithValue("@posicion", pos);
 
-                    conexionsql.Open();
-                    command.ExecuteNonQuery();
-                }
+                conexionsql.Open();
+                command.ExecuteNonQuery();
+                command.Parameters.Clear();
+                conexionsql.Close();
             }
         }
         public void Editar(int id, int idimg, int node, string pos)
         {
-            using (MySqlConnection conexionsql = new(CD_Conexion.ConexionStr()))
+            using (SqlConnection conexionsql = new(CD_Conexion.ConexionStr()))
             {
-                using (MySqlCommand command = new MySqlCommand("EditarFlecha", conexionsql))
-                {
-                    command.CommandType = CommandType.StoredProcedure;
-                    command.Parameters.AddWithValue("@id", id).Direction = ParameterDirection.InputOutput;
-                    command.Parameters.AddWithValue("@idimg", idimg).Direction = ParameterDirection.InputOutput;
-                    command.Parameters.AddWithValue("@node", node).Direction = ParameterDirection.InputOutput;
-                    command.Parameters.AddWithValue("@posicion", pos).Direction = ParameterDirection.InputOutput;
+                SqlCommand command = new SqlCommand("EditarFlecha", conexionsql);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@id", id);
+                command.Parameters.AddWithValue("@idimg", idimg);
+                command.Parameters.AddWithValue("@node", node);
+                command.Parameters.AddWithValue("@posicion", pos);
 
-                    conexionsql.Open();
-                    command.ExecuteNonQuery();
-                }
+                conexionsql.Open();
+                command.ExecuteNonQuery();
+                command.Parameters.Clear();
+                conexionsql.Close();
             }
         }
         public void Eliminar(int id)
         {
-            using (MySqlConnection conexionsql = new(CD_Conexion.ConexionStr()))
+            using (SqlConnection conexionsql = new(CD_Conexion.ConexionStr()))
             {
-                using (MySqlCommand command = new MySqlCommand("EliminarFlecha", conexionsql))
-                {
-                    command.CommandType = CommandType.StoredProcedure;
-                    command.Parameters.AddWithValue("@id", id).Direction = ParameterDirection.InputOutput;
+                SqlCommand command = new SqlCommand("EliminarFlecha", conexionsql);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@id", id);
 
-                    conexionsql.Open();
-                    command.ExecuteNonQuery();
-                }
+                conexionsql.Open();
+                command.ExecuteNonQuery();
+                command.Parameters.Clear();
+                conexionsql.Close();
+
             }
         }
     }

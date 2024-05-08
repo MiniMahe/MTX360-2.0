@@ -3199,11 +3199,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\maelm\\Documents\\prog\\MTX360\\MTXView\\CAD\\CAD.csproj",
+      "projectUniqueName": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\CAD\\CAD.csproj",
       "projectName": "CAD",
-      "projectPath": "C:\\Users\\maelm\\Documents\\prog\\MTX360\\MTXView\\CAD\\CAD.csproj",
+      "projectPath": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\CAD\\CAD.csproj",
       "packagesPath": "C:\\Users\\maelm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\maelm\\Documents\\prog\\MTX360\\MTXView\\CAD\\obj\\",
+      "outputPath": "C:\\Users\\maelm\\Documents\\clase\\MTX\\MTX360-2.0\\MTXView\\CAD\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\maelm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3226,6 +3226,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -3261,7 +3266,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
       }
     }
   }
