@@ -974,11 +974,6 @@ C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\MVC.d
 C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\MVC.pdb
 C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\Azure.Core.dll
 C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\Azure.Identity.dll
-C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
-C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\Google.Protobuf.dll
-C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\K4os.Compression.LZ4.dll
-C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\K4os.Compression.LZ4.Streams.dll
-C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\K4os.Hash.xxHash.dll
 C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
 C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\Microsoft.Identity.Client.dll
@@ -991,7 +986,6 @@ C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\Micro
 C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
 C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\MySql.Data.dll
 C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
 C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\System.Data.SqlClient.dll
 C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\System.Drawing.Common.dll
@@ -1001,7 +995,6 @@ C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\Syste
 C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\System.Security.Permissions.dll
 C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\System.Windows.Extensions.dll
-C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\ZstdSharp.dll
 C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\de\Microsoft.Data.SqlClient.resources.dll
 C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\es\Microsoft.Data.SqlClient.resources.dll
 C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\fr\Microsoft.Data.SqlClient.resources.dll
@@ -1019,11 +1012,6 @@ C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\runti
 C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\runtimes\win-x64\native\comerr64.dll
-C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\runtimes\win-x64\native\gssapi64.dll
-C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\runtimes\win-x64\native\k5sprt64.dll
-C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\runtimes\win-x64\native\krb5_64.dll
-C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\runtimes\win-x64\native\krbcc64.dll
 C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
 C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
 C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
@@ -1065,3 +1053,4 @@ C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\obj\Debug\net7.0\refin
 C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\obj\Debug\net7.0\MVC.pdb
 C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\obj\Debug\net7.0\MVC.genruntimeconfig.cache
 C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\obj\Debug\net7.0\ref\MVC.dll
+C:\Users\maelm\Documents\clase\MTX\MTX360-2.0\MTXView\MVC\bin\Debug\net7.0\Octokit.dll
