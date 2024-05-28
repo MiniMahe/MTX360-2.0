@@ -7,5 +7,8 @@
         public int nodeid { get; set; }
         public string posicion { get; set; }
         public List<Arrows> list = new List<Arrows>();
+
+        public int CurrentPage { get; set; }
+        public int TotalPages { get; set; }
     }
 }

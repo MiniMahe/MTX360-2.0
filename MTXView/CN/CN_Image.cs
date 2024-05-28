@@ -30,11 +30,11 @@ namespace CN
             imagenes = query.ToList();
             return imagenes;
         }
-        //public void Crear(int idimg, int node, string pos)
-        //{
-        //    CD_Image imagen = new CD_Image();
-        //    //imagen.Crear(idimg, node, pos);
-        //}
+        public void Crear(string ruta, string nombre, int x, int y, int piso)
+        {
+            CD_Image imagen = new CD_Image();
+            imagen.Crear(ruta, nombre, x,y,piso);
+        }
         public void Editar(int id, string nombre, string ruta, int x, int y, int piso)
         {
             CD_Image imagen = new CD_Image();

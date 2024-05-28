@@ -3,9 +3,9 @@
 *.vsidx
 *.cache
 /.vs
+/MTXView/CN/bin/
 /MTXView/CAD/bin/Debug/net7.0/CAD.dll
 /MTXView/CAD/bin/Debug/net7.0/CAD.pdb
-/MTXView/CAD/obj/Debug/net7.0/ref/CAD.dll
+/MTXView/CAD/obj/
 /MTXView/CAD/obj/Debug/net7.0/refint/CAD.dll
 /MTXView/CAD/obj/Debug/net7.0/CAD.AssemblyInfo.cs
-/MTXView/CN/bin/Debug/net7.0/CAD.dll

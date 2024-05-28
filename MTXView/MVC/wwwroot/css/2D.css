@@ -9,7 +9,10 @@ html {
     }
 }
 
-
+.mini {
+    width: 50%; /* Reducir el tamaño de la imagen a la mitad */
+    /* Puedes agregar más estilos aquí según sea necesario */
+}
 
 html {
     position: relative;

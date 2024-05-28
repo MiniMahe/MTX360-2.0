@@ -1,5 +1,4 @@
-﻿using MySql.Data.MySqlClient;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
 
 namespace CAD
@@ -17,22 +16,24 @@ namespace CAD
                 return dataTable;
             }
         }
-        //public void Crear(int idim, int nodo, string pos)
-        //{
-        //    using (SqlConnection conexionsql = new(CD_Conexion.ConexionStr()))
-        //    {
-        //        SqlCommand command = new SqlCommand("CrearImagen", conexionsql);
-        //        command.CommandType = CommandType.StoredProcedure;
-        //        command.Parameters.AddWithValue("@idimg", idim);
-        //        command.Parameters.AddWithValue("@node", nodo);
-        //        command.Parameters.AddWithValue("@posicion", pos);
+        public void Crear(string ruta, string nombre, int x, int y, int piso)
+        {
+            using (SqlConnection conexionsql = new(CD_Conexion.ConexionStr()))
+            {
+                SqlCommand command = new SqlCommand("CrearImagen", conexionsql);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@ruta", ruta);
+                command.Parameters.AddWithValue("@nombre", nombre);
+                command.Parameters.AddWithValue("@x", x);
+                command.Parameters.AddWithValue("@y", y);
+                command.Parameters.AddWithValue("@piso", piso);
 
-        //        conexionsql.Open();
-        //        command.ExecuteNonQuery();
-        //        command.Parameters.Clear();
-        //        conexionsql.Close();
-        //    }
-        //}
+                conexionsql.Open();
+                command.ExecuteNonQuery();
+                command.Parameters.Clear();
+                conexionsql.Close();
+            }
+        }
         public void Editar(int id, string nombre, string ruta, int x, int y, int piso)
         {
             using (SqlConnection conexionsql = new(CD_Conexion.ConexionStr()))

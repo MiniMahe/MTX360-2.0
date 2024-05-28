@@ -24,7 +24,6 @@ namespace MVC.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(Login modelLogin)
         {
-
             if (ModelState.IsValid)
             {
                 CN_User loginUser = new CN_User();
@@ -101,7 +100,6 @@ namespace MVC.Controllers
             return Json(JsonSerializer.Serialize(listaImagenes));
         }
 
-
         [EnableCors]
         public IActionResult Index()
         {
@@ -116,13 +114,6 @@ namespace MVC.Controllers
             ViewData["piso"] = "1";
 
             return View("2Dview", listaClases);
-        }
-        public IActionResult Fotoinicial(int numero, int piso)
-        {
-            ParaJs imagenypiso = new ParaJs();
-            imagenypiso.pisoimg = piso;
-            imagenypiso.imageninical = numero;
-            return View("Sphere", imagenypiso);
         }
         public IActionResult Planta2()
         {
@@ -141,6 +132,12 @@ namespace MVC.Controllers
 
             return View("2Dview", listaClases);
         }
-
+        public IActionResult Fotoinicial(int numero, int piso)
+        {
+            ParaJs imagenypiso = new ParaJs();
+            imagenypiso.pisoimg = piso;
+            imagenypiso.imageninical = numero;
+            return View("Sphere", imagenypiso);
+        }
     }
 }

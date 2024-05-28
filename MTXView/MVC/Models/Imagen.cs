@@ -8,6 +8,11 @@
 		public int x { get; set; }
 		public int y { get; set; }
 		public int piso { get; set; }
+        public IFormFile ImageFile { get; set; }
+
+        public int CurrentPage { get; set; }
+        public int TotalPages { get; set; }
+
         public List<Imagen> list = new List<Imagen>();
 		public List<Arrows> flechas { get; set; }
         public Imagen()
