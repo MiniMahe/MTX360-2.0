@@ -1,0 +1,42 @@
+﻿@model MVC.Models.Arrows
+
+@{
+    Layout = "_2DviewLY";
+}
+<div class="container">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Id imagen</th>
+                <th scope="col">Nodo</th>
+                <th scope="col">Posición</th>
+                <th scope="col" colspan="2">@Html.ActionLink("Crear", "CFlecha", new { }, new { @class = "btn btn-success" })</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.list)
+            {
+                <tr>
+                    <td>@item.id_image</td>
+                    <td>@item.nodeid</td>
+                    <td>@item.posicion</td>
+                    <td>@Html.ActionLink("Editar", "EdFlecha", new { id = item.id, idimg = item.id_image, nodo = item.nodeid, pos = item.posicion }, new { @class = "btn btn-primary" })</td>
+                    <td>@Html.ActionLink("Eliminar", "ElFlecha", new { id = item.id }, new { @class = "btn btn-danger" })</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <!-- Botones de paginación -->
+    <nav>
+        <ul class="pagination">
+            @for (int i = 1; i <= Model.TotalPages; i++)
+            {
+                <li class="page-item @(i == Model.CurrentPage ? "active" : "")">
+                    <a class="page-link" href="@Url.Action("Flechas", new { page = i })">@i</a>
+                </li>
+            }
+        </ul>
+    </nav>
+</div>
+

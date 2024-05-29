@@ -1,0 +1,34 @@
+﻿@model MVC.Models.Imagen
+
+@{
+    Layout = "_Flechas";
+}
+<div class="container">
+    <div class="form-control">
+        @using (Html.BeginForm("CImagen", "Home", FormMethod.Post, new { @enctype = "multipart/form-data", @class = "card-body cardbody-color p-lg-5" }))
+        {
+        <div class="form-group">
+            <label>Nombre</label>
+            @Html.EditorFor(x=>x.nombre,new { htmlAttributes =new {@class = "form-control", @textindex = "1"}})
+            <br>
+            <label>Ruta</label>
+            @Html.EditorFor(x=>x.ruta,new { htmlAttributes =new {@class = "form-control", @textindex = "2"}})
+            <br>
+            <label>X</label>
+            @Html.EditorFor(x => x.x, new { htmlAttributes = new { @class = "form-control", @textindex = "3" } })
+            <br>
+            <label>Y</label>
+            @Html.EditorFor(x => x.y, new { htmlAttributes = new { @class = "form-control", @textindex = "4" } })
+            <br>
+            <label>Piso</label>
+            @Html.EditorFor(x => x.piso, new { htmlAttributes = new { @class = "form-control", @textindex = "5" } })
+            <br>
+            <label for="ImageFile">Seleccione una imagen</label>
+            @Html.EditorFor(x => x.ImageFile, new { htmlAttributes = new { @class = "form-control", @textindex = "6" } })
+            <br>
+        </div>
+
+            <div class="text-center"> @Html.ActionLink("Volver", "Imagenes", new { }, new { @class = "btn btn-success" })<button type="submit" class="btn btn-primary">Guardar</button></div>
+        }
+    </div>
+</div>

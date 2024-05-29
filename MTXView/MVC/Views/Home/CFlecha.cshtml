@@ -1,0 +1,24 @@
+﻿@model MVC.Models.Arrows
+
+@{
+    Layout = "_Flechas";
+}
+<div class="container">
+
+    <div class="form-control">
+        @using (Html.BeginForm("CFlecha", "Home", FormMethod.Post, new { @class = "card-body cardbody-color p-lg-5" }))
+        {
+        <div class="form-group">
+            <label>Id imagen actual</label>
+                @Html.EditorFor(x => x.id_image, new { htmlAttributes = new { @class = "form-control", @textindex = "1" }})
+            <br>
+            <label>Id imagen siguiente</label>
+                @Html.EditorFor(x => x.nodeid, new { htmlAttributes = new { @class = "form-control", @textindex = "2" } })
+            <br>
+            <label>Posición (ej. 20deg)</label>
+                @Html.EditorFor(x => x.posicion, new { htmlAttributes = new { @class = "form-control", @textindex = "3" } })
+            <div class="text-center">  @Html.ActionLink("Volver","Flechas",new{},new{@class="btn btn-success"})<button type="submit" class="btn btn-primary">Guardar</button></div>
+        </div>
+        }
+    </div>
+</div>
