@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MVC.Models;
 using Octokit;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace MVC.Controllers
 {
@@ -64,81 +65,7 @@ namespace MVC.Controllers
 
             return View("Index", listaClases);
         }
-        public IActionResult CImagen()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> CImagen(Imagen imagen)
-        {
-            if (imagen.ImageFile == null || imagen.ImageFile.Length == 0)
-            {
-                ModelState.AddModelError("", "Por favor seleccione un archivo de imagen.");
-                return View(imagen);
-            }
-
-            var client = new GitHubClient(new ProductHeaderValue("GitHubUploader"))
-            {
-                Credentials = new Credentials(GITHUB_TOKEN)
-            };
-
-            string base64Image;
-
-            using (var memoryStream = new MemoryStream())
-            {
-                await imagen.ImageFile.CopyToAsync(memoryStream);
-                var fileBytes = memoryStream.ToArray();
-                base64Image = Convert.ToBase64String(fileBytes);
-            }
-
-            if (string.IsNullOrEmpty(base64Image))
-            {
-                ModelState.AddModelError("", "Error al codificar la imagen en base64.");
-                return RedirectToAction("Flechas");
-            }
-
-            var createChangeSet = new CreateFileRequest(COMMIT_MESSAGE, base64Image, BRANCH, true);
-            var fileName = Path.GetFileNameWithoutExtension(imagen.ImageFile.FileName) + ".JPG";
-            var filePath = $"fotos/{fileName}";
-
-            try
-            {
-                var existingFile = await client.Repository.Content.GetAllContentsByRef(OWNER, REPO, filePath, BRANCH);
-
-                if (existingFile.Count > 0)
-                {
-                    var updateChangeSet = new UpdateFileRequest(COMMIT_MESSAGE, base64Image, existingFile[0].Sha, BRANCH);
-                    var updateFile = await client.Repository.Content.UpdateFile(OWNER, REPO, filePath, updateChangeSet);
-                }
-                else
-                {
-                    var createFile = await client.Repository.Content.CreateFile(OWNER, REPO, filePath, createChangeSet);
-                }
-            }
-            catch (NotFoundException)
-            {
-                var createFile = await client.Repository.Content.CreateFile(OWNER, REPO, filePath, createChangeSet);
-            }
-            catch (Exception ex)
-            {
-                ModelState.AddModelError("", $"Error al subir la imagen a GitHub: {ex.Message}");
-                return View(imagen);
-            }
-
-            try
-            {
-                CN_Image negocio = new CN_Image();
-                negocio.Crear(imagen.ruta,imagen.nombre, imagen.x, imagen.y, imagen.piso);
-            }
-            catch (Exception ex)
-            {
-                ModelState.AddModelError("", $"Error al guardar los detalles de la imagen en la base de datos: {ex.Message}");
-                return View(imagen);
-            }
-
-            return RedirectToAction("Imagenes");
-        }
+        
 
         public async Task<IActionResult> LogOut()
         {
@@ -206,6 +133,61 @@ namespace MVC.Controllers
             negocio.Eliminar(id);
             return RedirectToAction("Flechas");
         }
+        
+        public IActionResult CImagen()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CImagen(Imagen imagen)
+        {
+            if (imagen.ImageFile == null || imagen.ImageFile.Length == 0)
+            {
+                ModelState.AddModelError("", "Por favor seleccione un archivo de imagen.");
+                return View(imagen);
+            }
+
+            var client = new GitHubClient(new ProductHeaderValue("GitHubUploader"))
+            {
+                Credentials = new Credentials(GITHUB_TOKEN)
+            };
+
+            string base64Image;
+
+            using (var memoryStream = new MemoryStream())
+            {
+                await imagen.ImageFile.CopyToAsync(memoryStream);
+                var fileBytes = memoryStream.ToArray();
+                base64Image = Convert.ToBase64String(fileBytes);
+            }
+
+            var createChangeSet = new CreateFileRequest(COMMIT_MESSAGE, base64Image, BRANCH, false);
+            var fileName = Path.GetFileName(imagen.ImageFile.FileName);
+            var filePath = $"fotos/{fileName}";
+
+            try
+            {
+                var existingFile = await client.Repository.Content.GetAllContentsByRef(OWNER, REPO, filePath, BRANCH);
+
+                var updateChangeSet = new UpdateFileRequest(COMMIT_MESSAGE, base64Image, existingFile[0].Sha, BRANCH,false);
+                var updateFile = await client.Repository.Content.UpdateFile(OWNER, REPO, filePath, updateChangeSet);
+            }
+            catch (NotFoundException)
+            {
+                var createFile = await client.Repository.Content.CreateFile(OWNER, REPO, filePath, createChangeSet);
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", $"Error al subir la imagen a GitHub: {ex.Message}");
+                return View(imagen);
+            }
+
+             CN_Image negocio = new CN_Image();
+             negocio.Crear(fileName,imagen.nombre, imagen.x, imagen.y, imagen.piso);
+
+            return RedirectToAction("Imagenes");
+        }
         public IActionResult EdImagen(int id,string nombre, string ruta, int x, int y, int piso)
         {
             Imagen imagenes = new Imagen();
@@ -218,14 +200,69 @@ namespace MVC.Controllers
             return View(imagenes);
         }
         [HttpPost]
-        public IActionResult EdImagen(Imagen img)
+        public async Task<IActionResult> EdImagen(Imagen imagen)
         {
+            if (imagen.ImageFile == null || imagen.ImageFile.Length == 0)
+            {
+                ModelState.AddModelError("", "Por favor seleccione un archivo de imagen.");
+                return View(imagen);
+            }
+
+            var client = new GitHubClient(new ProductHeaderValue("GitHubUploader"))
+            {
+                Credentials = new Credentials(GITHUB_TOKEN)
+            };
+
+            string base64Image;
+
+            using (var memoryStream = new MemoryStream())
+            {
+                await imagen.ImageFile.CopyToAsync(memoryStream);
+                var fileBytes = memoryStream.ToArray();
+                base64Image = Convert.ToBase64String(fileBytes);
+            }
+
+            var fileName = Path.GetFileName(imagen.ImageFile.FileName);
+            var filePath = $"fotos/{fileName}";
+
+            try
+            {
+                var existingFile = await client.Repository.Content.GetAllContentsByRef(OWNER, REPO, filePath, BRANCH);
+
+                var updateChangeSet = new UpdateFileRequest(COMMIT_MESSAGE, base64Image, existingFile[0].Sha, BRANCH,false);
+                var updateFile = await client.Repository.Content.UpdateFile(OWNER, REPO, filePath, updateChangeSet);
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", $"Error al subir la imagen a GitHub: {ex.Message}");
+                return View(imagen);
+            }
             CN_Image negocio = new CN_Image();
-            negocio.Editar(img.id, img.nombre, img.ruta, img.x, img.y, img.piso);
+            negocio.Editar(imagen.id, imagen.nombre, fileName, imagen.x, imagen.y, imagen.piso);
             return RedirectToAction("Imagenes");
         }
-        public IActionResult ElImagen(int id)
+        public async Task<IActionResult> ElImagen(int id, string ruta)
         {
+            var client = new GitHubClient(new ProductHeaderValue("GitHubUploader"))
+            {
+                Credentials = new Credentials(GITHUB_TOKEN)
+            };
+
+            var filePath = $"fotos/{ruta}";
+
+            try
+            {
+                var existingFile = await client.Repository.Content.GetAllContentsByRef(OWNER, REPO, filePath, BRANCH);
+
+                var deleteChangeSet = new DeleteFileRequest(COMMIT_MESSAGE, existingFile[0].Sha, BRANCH);
+                await client.Repository.Content.DeleteFile(OWNER, REPO, filePath, deleteChangeSet);
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", $"Error al eliminar la imagen a GitHub: {ex.Message}");
+                return RedirectToAction("Imagenes");
+            }
+
             CN_Image negocio = new CN_Image();
             negocio.Eliminar(id);
             return RedirectToAction("Imagenes");

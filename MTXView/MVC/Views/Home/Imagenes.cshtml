@@ -30,7 +30,7 @@
             <td>@item.y</td>
             <td>@item.piso</td>
             <td>@Html.ActionLink("Editar", "EdImagen", new { id = item.id, nombre = item.nombre, ruta = item.ruta, x=item.x, y=item.y, piso=item.piso}, new { @class = "btn btn-primary" })</td>
-            <td>@Html.ActionLink("Eliminar", "ElImagen", new { id = item.id }, new { @class = "btn btn-danger" })</td>
+            <td>@Html.ActionLink("Eliminar", "ElImagen", new { id = item.id, ruta = item.ruta }, new { @class = "btn btn-danger" })</td>
         </tr>
     }
     </tbody>

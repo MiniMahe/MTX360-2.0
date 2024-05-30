@@ -1,19 +1,16 @@
 ﻿@model MVC.Models.Imagen
 
 @{
-    Layout = "_Flechas";
+    Layout = "_2DviewLY";
 }
 <div class="container">
 
     <div class="form-control">
-        @using (Html.BeginForm("EdImagen", "Home", FormMethod.Post, new { @class = "card-body cardbody-color p-lg-5" }))
+        @using (Html.BeginForm("EdImagen", "Home", FormMethod.Post, new { @enctype = "multipart/form-data", @class = "card-body cardbody-color p-lg-5" }))
         {
         <div class="form-group">
             <label>Nombre</label>
             @Html.EditorFor(x=>x.nombre,new { htmlAttributes =new {@class = "form-control", @textindex = "1"}})
-            <br>
-            <label>Ruta</label>
-            @Html.EditorFor(x=>x.ruta,new { htmlAttributes =new {@class = "form-control", @textindex = "2"}})
             <br>
             <label>X</label>
             @Html.EditorFor(x => x.x, new { htmlAttributes = new { @class = "form-control", @textindex = "3" } })
@@ -23,6 +20,9 @@
             <br>
             <label>Piso</label>
             @Html.EditorFor(x => x.piso, new { htmlAttributes = new { @class = "form-control", @textindex = "5" } })
+            <br>
+            <label for="ImageFile">Seleccione una imagen</label>
+            @Html.EditorFor(x => x.ImageFile, new { htmlAttributes = new { @class = "form-control", @textindex = "6" } })
             <br>
         </div>
 
