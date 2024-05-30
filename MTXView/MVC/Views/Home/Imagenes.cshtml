@@ -1,0 +1,47 @@
+﻿@model MVC.Models.Imagen
+
+@{
+    Layout = "_2DviewLY";
+}
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th>Imagen</th>
+            <th scope="col">Id imagen</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Ruta</th>
+            <th scope="col">X</th>
+            <th scope="col">Y</th>
+            <th scope="col">Piso</th>
+            <th scope="col" colspan="2"> @Html.ActionLink("Crear", "CImagen", new { }, new { @class = "btn btn btn-success" })</th>
+
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.list)
+    {
+        <tr>
+            <td style="width: auto;"><img src="https://minimahe.github.io/MTX360/fotos/@item.ruta" class="mini" /></td>
+            <td>@item.id</td>
+            <td>@item.nombre</td>
+            <td>@item.ruta</td>
+            <td>@item.x</td>
+            <td>@item.y</td>
+            <td>@item.piso</td>
+            <td>@Html.ActionLink("Editar", "EdImagen", new { id = item.id, nombre = item.nombre, ruta = item.ruta, x=item.x, y=item.y, piso=item.piso}, new { @class = "btn btn-primary" })</td>
+            <td>@Html.ActionLink("Eliminar", "ElImagen", new { id = item.id, ruta = item.ruta }, new { @class = "btn btn-danger" })</td>
+        </tr>
+    }
+    </tbody>
+</table>
+<nav>
+    <ul class="pagination">
+        @for (int i = 1; i <= Model.TotalPages; i++)
+        {
+            <li class="page-item @(i == Model.CurrentPage ? "active" : "")">
+                <a class="page-link" href="@Url.Action("Imagenes", new { page = i })">@i</a>
+            </li>
+        }
+    </ul>
+</nav>
