@@ -5,6 +5,8 @@ Proyecto Final 2º DAW.
 
 Street View en C#.
 
+*Recordar que para utilizar todas las funciones del proyecto es necesario que el administrador de acceso a la base de datos en azure y la autenticación de github para subir imagenes*
+
 # 💻 Este proyecto usa:
 Principalmente: ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=plastic&logo=c-sharp&logoColor=white) ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=plastic&logo=.net&logoColor=white)
 
