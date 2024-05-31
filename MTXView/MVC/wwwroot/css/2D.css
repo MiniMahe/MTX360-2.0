@@ -10,8 +10,11 @@ html {
 }
 
 .mini {
-    width: 50%; /* Reducir el tamaño de la imagen a la mitad */
-    /* Puedes agregar más estilos aquí según sea necesario */
+    width: 50%;
+}
+
+.card {
+    background-color: #ffeded96;
 }
 
 html {
@@ -21,6 +24,7 @@ html {
 
 body {
     margin-bottom: 60px;
+    background-color: #fcffde;
 }
 
 .img-aula {
