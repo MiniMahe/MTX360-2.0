@@ -5,6 +5,13 @@ Proyecto Final 2º DAW.
 
 Street View en C#.
 
+Necesidades para ejecutar el proyecto:
+Visual Studio 2022
+![image](https://github.com/MiniMahe/MTX360-2.0/assets/100020513/c2543b0a-6b19-4819-9fc5-b15a99148a62)
+
+SQL Server
+
+
 *Recordar que para utilizar todas las funciones del proyecto es necesario que el administrador de acceso a la base de datos en azure y la autenticación de github para subir imagenes*
 
 # 💻 Este proyecto usa:
